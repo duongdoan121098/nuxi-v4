@@ -1,0 +1,67 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lint:fix": "prettier --write --list-different . && yarn lint:js --fix"
+  },
+  "dependencies": {
+    "@nuxt/image": "1.9.0",
+    "@nuxtjs/critters": "^0.8.0",
+    "@nuxtjs/device": "^3.2.4",
+    "@nuxtjs/fontaine": "^0.4.4",
+    "@nuxtjs/html-validator": "^1.8.2",
+    "@nuxtjs/web-vitals": "^0.2.7",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@pinia/nuxt": "^0.10.1",
+    "dayjs-nuxt": "^2.1.11",
+    "dotenv-flow": "^4.1.0",
+    "h3-compression": "^0.3.2",
+    "numeral": "^2.0.6",
+    "nuxt": "^3.15.4",
+    "sweetalert2": "^11.16.0",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue3-toastify": "^0.2.8"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "@parcel/watcher",
+      "esbuild",
+      "esbuild",
+      "sharp"
+    ]
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.18.1",
+    "@nuxt/typescript-build": "^3.0.2",
+    "@types/node": "^22.13.1",
+    "@types/numeral": "^2.0.5",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-vue": "^9.32.0",
+    "less": "^4.2.2",
+    "nuxt-delay-hydration": "^1.3.8",
+    "nuxt-purgecss": "^2.0.0",
+    "postcss": "^8.5.2",
+    "postcss-import": "^16.1.0",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.5.0",
+    "sass": "^1.84.0",
+    "sass-loader": "^16.0.4",
+    "typescript": "^5.7.3"
+  }
+}
